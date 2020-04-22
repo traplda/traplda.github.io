@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+article {
+  display: flex;
+  border: 2px solid #4285f4;
+  padding: 20px;
+  padding-right: 2px;
+  /* Overriding the right 20px padding, because the last box has also a 20px margin, the 2px is needed because the border */
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background: #4285f4;
+  margin-right: 20px;
+}
+
+.orange {
+  background: #ff6347;
+}
+
+.orange .box {
+  background: #643579;
+}
