@@ -1,3 +1,24 @@
 .completed {
   text-decoration: line-through;
 }
+body{
+  background: rgb(116, 201, 116);
+}
+.conteiner{
+  width: 500px;
+  background: rgb(196, 193, 193);
+  padding: 20px;
+  text-align: center;
+
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  text-align: left;
+}
+
+li {
+  padding-bottom: 10px;
+}
