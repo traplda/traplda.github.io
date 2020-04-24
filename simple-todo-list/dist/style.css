@@ -6,7 +6,7 @@ body{
 }
 .conteiner{
   width: 500px;
-  background: rgb(196, 193, 193);
+  background: rgb(231, 228, 228);
   padding: 20px;
   text-align: center;
 
@@ -21,4 +21,8 @@ ul {
 
 li {
   padding-bottom: 10px;
+}
+
+#done {
+  width: 30px;
 }
