@@ -25,4 +25,12 @@ li {
 
 #done {
   width: 30px;
+} 
+
+.done-ckecked {
+  background: green;
+}
+
+img {
+  margin: 5px;
 }
