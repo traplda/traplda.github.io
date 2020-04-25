@@ -1,12 +1,16 @@
 body {
     background:silver;
 }
-.conteiner{
+.conteiner {
     display: flex;
+    flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%
+}
+.photo-main{
+    display: flex;
 }
 .left {
     background: white;
@@ -36,4 +40,13 @@ body {
 .language-icon {
     width: 25px;
     padding: 2px;
+}
+
+.miniatures {
+  margin: auto;
+}
+
+.min1 {
+    height: 15%;
+    padding: 10px;
 }
