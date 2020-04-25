@@ -1,0 +1,32 @@
+body {
+    background:silver;
+}
+.conteiner{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.left {
+    background: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: solid black 1px;
+    margin-right: 5px;
+}
+.right {
+    transform: rotate(180deg);
+    background: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: solid black 1px;
+    margin-left: 5px;
+}
+.photo {
+    height: equal to .left; 
+}
