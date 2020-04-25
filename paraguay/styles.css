@@ -27,6 +27,11 @@ body {
     border: solid black 1px;
     margin-left: 5px;
 }
-.photo {
-    height: equal to .left; 
+.languages {
+    display: flex;
+    justify-content: flex-end;
+}
+.language-icon {
+    width: 25px;
+    padding: 2px;
 }
