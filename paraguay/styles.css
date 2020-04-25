@@ -10,22 +10,24 @@ body {
 }
 .left {
     background: white;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 30%;
+    padding-bottom: 30%;
     padding-right: 20px;
     padding-left: 20px;
     border: solid black 1px;
     margin-right: 5px;
+    width: 25px;
 }
 .right {
     transform: rotate(180deg);
     background: white;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 30%;
+    padding-bottom: 30%;
     padding-right: 20px;
     padding-left: 20px;
     border: solid black 1px;
     margin-left: 5px;
+    width: 25px;
 }
 .languages {
     display: flex;
