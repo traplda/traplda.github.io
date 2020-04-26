@@ -1,39 +1,49 @@
 body {
     background:silver;
 }
+
+
 .conteiner {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
-    /* margin-bottom: 10% */
+    margin-bottom: 10%
 }
 .photo-main{
     display: flex;
+    justify-content: space-evenly;
+}
+.photo-large{
+    box-shadow: 0px 0px 5px 2px grey;
 }
 .left {
     background: white;
-    padding-top: 30%;
-    padding-bottom: 30%;
-    padding-right: 20px;
-    padding-left: 20px;
+    /* padding-top: 30%;
+    padding-bottom: 30%;*/
+    padding-right: 2%;
+    padding-left: 2%; 
     border: solid black 1px;
-    margin-right: 5px;
-    width: 25px;
+    margin-right: 1%;
+    box-shadow: 0px 0px 5px 2px grey;
+    /* width: 25px; */
 }
 .right {
     transform: rotate(180deg);
     background: white;
-    padding-top: 30%;
-    padding-bottom: 30%;
-    padding-right: 20px;
-    padding-left: 20px;
+    /* padding-top: 30%;
+    padding-bottom: 30%;*/
+    padding-right: 2%;
+    padding-left: 2%; 
     border: solid black 1px;
-    margin-left: 5px;
-    width: 25px;
+    margin-left: 1%;
+    box-shadow: 0px 0px 5px 2px grey;
+    /* width: 25px; */
 }
 .languages {
+    position: static;
     display: flex;
     justify-content: flex-end;
 }
@@ -48,15 +58,13 @@ body {
   padding-right: 20%;
 }
 
-.min1 {
-    height: 30 px;
-    margin: 10px;
+.mini {
+    /* height: 20 px; */
+    margin: 10px; 
+    border: solid white 5px;
+    box-shadow: 0px 0px 5px 2px grey;
 }
-.min2{
-    height: 30 px;
-    margin: 10px;
-}
-.min3{
-    height: 30 px;
-    margin: 10px;
+
+#first {
+    border: double white px;
 }
