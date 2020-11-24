@@ -6704,7 +6704,7 @@ $(document).ready(function() {
     $('button').click(function() {
       for (i = 0; i < boxes.length; i++) {
         var nove_slovo = rand(slova);
-        $(boxes[i]).append(nove_slovo);
+        $(boxes[i]).html(nove_slovo);
         slova = arrayRemove(slova,nove_slovo);
       };
     }); 
