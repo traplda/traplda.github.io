@@ -8,11 +8,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 880px;
-    border: 2px solid #4285f4;
+    border: 5px solid grey;
+    box-shadow: 10px 10px grey;
+    transition: all .4s ease;
     padding: 20px;
     padding-right: 2px;
     /* Overriding the right 20px padding, because the last box has also a 20px margin, the 2px is needed because the border */
     margin-bottom: 20px;
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
   }
   
   div {
@@ -28,10 +31,60 @@ main {
     padding-top: 30px;
   }
   
-  .orange {
-    background: #ff6347;
+  #on_move {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    border: none;
   }
-  
-  .orange .box {
-    background: #643579;
+  #blue {
+    background:#1a53ff;
+    margin-right: 5px;
+    margin-left: 25px;
+    width: 100px;
+  }
+  #red {
+    background:#ff1a1a;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    margin-left: 25px;
+  }
+  #to_select {
+    position: absolute;
+    left: 30px;
+    top: 280px;
+    border: none;
+  }
+  #select_blue {
+    height: 50px;
+    width: 50px;
+    margin-left: 45px;
+    padding: 0px;
+    background-color:#1a53ff;
+    border-radius: 50%;
+    border: none;  
+  }
+  #select_red {
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    background-color:#ff1a1a;
+    border-radius: 50%;
+    border: none;
+    margin-left: 45px;  
+  }
+  #select_other {
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    background-color:#ffff99;
+    border-radius: 50%;
+    border: none;
+    margin-left: 45px;  
+  }
+  #select_death {
+    border: none;
+    margin-top: 0px;
+    padding-top: 0px;
   }

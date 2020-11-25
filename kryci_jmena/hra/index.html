@@ -11,34 +11,50 @@
 </head> 
 <body>
     <main>
+        <div id="on_move">
+        <p>
+            Na tahu:
+        </p>
+        <div id="blue"></div>
+        <div id="red"></div>     
+        </div>
+        <div id="to_select">
+            <p>
+                Označ kartu:
+            </p>
+            <div id="select_blue"></div>
+            <div id="select_red"></div>
+            <div id="select_other"></div>
+            <div id="select_death"> <img src="data:image/png;base64,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" alt="nahla smrt" width="50" height="auto"> </div>     
+            </div>           
         <article>
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-            <div class="box6"></div>
-            <div class="box7"></div>
-            <div class="box8"></div>
-            <div class="box9"></div>
-            <div class="box10"></div>
-            <div class="box11"></div>
-            <div class="box12"></div>
-            <div class="box13"></div>
-            <div class="box14"></div>
-            <div class="box15"></div>
-            <div class="box16"></div>
-            <div class="box17"></div>
-            <div class="box18"></div>
-            <div class="box19"></div>
-            <div class="box20"></div>
-            <div class="box21"></div>
-            <div class="box22"></div>
-            <div class="box23"></div>
-            <div class="box24"></div>
-            <div class="box25"></div>
+            <div class="card" id='box1'></div>
+            <div class="card" id='box2'></div>
+            <div class="card" id='box3'></div>
+            <div class="card" id='box4'></div>
+            <div class="card" id='box5'></div>
+            <div class="card" id='box6'></div>
+            <div class="card" id='box7'></div>
+            <div class="card" id='box8'></div>
+            <div class="card" id='box9'></div>
+            <div class="card" id='box10'></div>
+            <div class="card" id='box11'></div>
+            <div class="card" id='box12'></div>
+            <div class="card" id='box13'></div>
+            <div class="card" id='box14'></div>
+            <div class="card" id='box15'></div>
+            <div class="card" id='box16'></div>
+            <div class="card" id='box17'></div>
+            <div class="card" id='box18'></div>
+            <div class="card" id='box19'></div>
+            <div class="card" id='box20'></div>
+            <div class="card" id='box21'></div>
+            <div class="card" id='box22'></div>
+            <div class="card" id='box23'></div>
+            <div class="card" id='box24'></div>
+            <div class="card" id='box25'></div>
         </article>
-        <button type="button" onclick="">Generuj rozmístění</button>
+        <button type="button" onclick="">Generuj slova</button>
     </main>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script type='text/javascript' src='https://requirejs.org/docs/release/2.3.5/minified/require.js'></script>

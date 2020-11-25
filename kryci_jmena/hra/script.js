@@ -10,11 +10,11 @@ function arrayRemove(arr, value) {
     });
 };
 var boxes = [
-    '.box1','.box2','.box3','.box4','.box5',
-    '.box6','.box7','.box8','.box9','.box10',
-    '.box11','.box12','.box13','.box14','.box15',
-    '.box16','.box17','.box18','.box19','.box20',
-    '.box21','.box22','.box23','.box24','.box25',
+    '#box1','#box2','#box3','#box4','#box5',
+    '#box6','#box7','#box8','#box9','#box10',
+    '#box11','#box12','#box13','#box14','#box15',
+    '#box16','#box17','#box18','#box19','#box20',
+    '#box21','#box22','#box23','#box24','#box25',
 ];
 var slova = ["člověk",
   "muž",
@@ -6707,5 +6707,54 @@ $(document).ready(function() {
         $(boxes[i]).html(nove_slovo);
         slova = arrayRemove(slova,nove_slovo);
       };
-    }); 
+    $('article').css('border','5px solid grey');
+    $('article').css('box-shadow','10px 10px grey');
+    $('.card').css('background','white');
+    $('#select_red, #select_other, #select_blue').css('border','none');
+    $('#select_red, #select_other, #select_blue').css('margin-left','45px');  
+
+    });   
   });
+
+$('#blue').click(function() {
+    $('article').css('border','5px solid #1a53ff');
+    $('article').css('box-shadow','10px 10px #1a53ff');
+});
+
+$('#red').click(function() {
+    $('article').css('border','5px solid #ff1a1a');
+    $('article').css('box-shadow','10px 10px #ff1a1a');
+});
+
+var color_change = 'white';
+
+$('.card').click(function() {
+  $(this).css('background',color_change);
+});
+
+
+$('#select_blue').click(function() {
+    color_change = '#1a53ff';
+    $(this).css('border','5px solid black');
+    $(this).css('margin-left','40px');
+    $('#select_red, #select_other').css('border','none');
+    $('#select_red, #select_other').css('margin-left','45px');  
+});
+
+
+$('#select_red').click(function() {
+  color_change = '#ff1a1a';
+  $(this).css('border','5px solid black');
+  $(this).css('margin-left','40px');
+  $('#select_blue, #select_other').css('border','none');
+  $('#select_blue, #select_other').css('margin-left','45px');  
+});
+
+
+$('#select_other').click(function() {
+  color_change = '#ffff99';
+  $(this, "card").css('border','5px solid black');
+  $(this, "card").css('margin-left','40px');
+  $('#select_blue, #select_red').css('border','none');
+  $('#select_blue, #select_red').css('margin-left','45px');  
+});
