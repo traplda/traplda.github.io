@@ -6700,6 +6700,8 @@ var slova = ["člověk",
   "rekreace",
 ];
 
+var color_change = 'white';
+
 $(document).ready(function() {
     $('button').click(function() {
       for (i = 0; i < boxes.length; i++) {
@@ -6711,8 +6713,8 @@ $(document).ready(function() {
     $('article').css('box-shadow','10px 10px grey');
     $('.card').css('background','white');
     $('#select_red, #select_other, #select_blue').css('border','none');
-    $('#select_red, #select_other, #select_blue').css('margin-left','45px');  
-
+    $('#select_red, #select_other, #select_blue').css('margin-left','45px');
+    color_change = 'white';  
     });   
   });
 
@@ -6726,8 +6728,6 @@ $('#red').click(function() {
     $('article').css('box-shadow','10px 10px #ff1a1a');
 });
 
-var color_change = 'white';
-
 $('.card').click(function() {
   $(this).css('background',color_change);
 });
@@ -6737,7 +6737,7 @@ $('#select_blue').click(function() {
     color_change = '#1a53ff';
     $(this).css('border','5px solid black');
     $(this).css('margin-left','40px');
-    $('#select_red, #select_other').css('border','none');
+    $('#select_red, #select_other, #select_death').css('border','none');
     $('#select_red, #select_other').css('margin-left','45px');  
 });
 
@@ -6746,7 +6746,7 @@ $('#select_red').click(function() {
   color_change = '#ff1a1a';
   $(this).css('border','5px solid black');
   $(this).css('margin-left','40px');
-  $('#select_blue, #select_other').css('border','none');
+  $('#select_blue, #select_other, #select_death').css('border','none');
   $('#select_blue, #select_other').css('margin-left','45px');  
 });
 
@@ -6755,6 +6755,14 @@ $('#select_other').click(function() {
   color_change = '#ffff99';
   $(this, "card").css('border','5px solid black');
   $(this, "card").css('margin-left','40px');
-  $('#select_blue, #select_red').css('border','none');
+  $('#select_blue, #select_red, #select_death').css('border','none');
   $('#select_blue, #select_red').css('margin-left','45px');  
+});
+
+$('#select_death').click(function() {
+  color_change = 'black';
+  $(this, "card").css('border','5px solid black');
+  // $(this, "card").css('margin-left','40px');
+  $('#select_blue, #select_red, #select_other').css('border','none');
+  $('#select_blue, #select_red, #select_other').css('margin-left','45px');  
 });
