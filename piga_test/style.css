@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(134, 23, 23);
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#searchResults {
+    padding-inline-start: 0;
+}
+
+.videoResult {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    margin: 10px 20px;
+}
+
+.subjectAndTeacher > h2 {
+    width: 200px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.subjectAndTeacher > p {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.videoResult > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+.klicova_slova {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+.suggestions {
+    border-top: 2px solid #999;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(206, 197, 197);
+  }
+#empty {
+    width: 0px;
+    height: 0px;
+}
+  .suggestions > div {
+    padding: 15px;
+    font-size: 12px;
+    color: #fff;
+    border-top: 1px solid #666;
+    cursor: pointer;
+  }
+  .suggestions > div:hover {
+    background-color: #1e4dd4;
+  }
+  #stitky {
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  #stitky > div {
+    font-size: 15px;
+    color: #fff;
+  }
+  .stitek {
+    border: 1px solid #999;
+    width: 30%;
+    padding: 20px;
+    background-color:forestgreen;
+  }
