@@ -59,6 +59,8 @@ searchBar.addEventListener('keyup', (e) => {
   };
   if (searchString  === '') {
     autocomplete.innerHTML = '';
+    autocomplete.id = 'empty';
+    searchResults.innerHTML = '';
   };
 });
 
